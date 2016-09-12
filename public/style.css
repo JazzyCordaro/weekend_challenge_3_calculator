@@ -4,3 +4,36 @@ body {
   background: linear-gradient(to left, #6441A5 , #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.btnPlus, .btnMinus, .btnTimes, .btnDivide{
+  font-size: 20px;
+}
+
+h1 {
+color: white;
+}
+
+#number1, #number2 {
+  font-size: 20px;
+}
+
+#submitButton {
+  background-color: white; /* Green */
+border: none;
+color: purple;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;
+}
+
+#outputDiv{
+  color: white;
+  font-size: 20px;
+}
+
+#operators{
+font-size: 20px;
+color: purple;
+}

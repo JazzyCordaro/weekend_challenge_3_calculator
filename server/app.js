@@ -16,6 +16,32 @@ app.get('/', function(req, res){
 
 app.post( '/texter', urlencodedParser, function( req, res ){
   console.log( 'texter hit', req.body );
+
+var results;
+
+var x = Number(req.body.x);
+var y = Number(req.body.y);
+
+
+switch (req.body.type) {
+  case "Minus":
+  results= x-y;
+  break;
+case 'Plus':
+results = x+y;
+break;
+case 'Multiply':
+results = x * y;
+break;
+case "Divide":
+results=x / y;
+break;
+default:
+results=NaN;
+}
+
+res.send({totalValue: results});
+
 });
 
 app.use( express.static( 'public' ) );
